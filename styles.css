@@ -1,0 +1,1003 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*===============
+BODY
+===============*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+}
+
+
+/* HEADER */
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 42px;
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 5px 1px;
+    border-bottom: 1px solid #e2e2e2;
+    opacity: 1;
+}
+
+.left,
+.mid,
+.right {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.left {
+    width: 300px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.mid {
+    padding: 10px;
+}
+
+.right {
+    width: 300px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.header-nav .left a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+}
+
+.header-nav .left .topic:hover {
+    text-decoration: underline;
+}
+
+
+/* header buttons */
+
+.icon-btns ul {
+    margin: 0 300px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.15rem;
+    border-top: 1px solid #eee;
+    padding: 10px 0 20px 0;
+}
+
+.icon-btns ul li {
+    margin: 10px 8px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 1.8;
+    border: 1px solid #eee;
+    background: #eee;
+    border-radius: 50%;
+}
+
+.icon-btns ul li:hover {
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.icon-btns ul li:last-child,
+.icon-btns ul li:nth-last-child(2) {
+    background: white;
+    border: none;
+    font-size: 1.8rem;
+    line-height: 1.1;
+}
+
+.icon-btns ul li:last-child:hover,
+.icon-btns ul li:nth-last-child(2):hover {
+    color: #ccc;
+}
+
+
+/* BUTTONS*/
+
+.btn-ble {
+    background: #567b95;
+    border: 1px solid #326891;
+    border-radius: 3px;
+    color: white;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.btn-ble:hover {
+    background: #326891;
+    border: 1px solid #326891;
+}
+
+.cmnt-btn {
+    height: 40px;
+    width: 300px;
+    font-size: 12px;
+}
+
+
+/* SECTION */
+
+.main-container {
+    padding-top: 50px;
+    font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-container h1 {
+    font-size: 1.9375rem;
+    line-height: 2.25rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-style: italic;
+    transform: scaleY(1.2);
+}
+
+.main-container p,
+.main-container blockquote,
+.main-container h1 {
+    padding: 0 300px;
+}
+
+.main-container div .author {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: #333;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    margin-top: 20px;
+}
+
+.main-container div .date {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+.main-container p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 0.9375rem;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.signup-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-top: 1px solid rgb(226, 226, 226);
+    color: rgb(51, 51, 51);
+    max-width: 600px;
+    margin: 1.5625rem auto 0.9375rem;
+    font-style: italic;
+}
+
+.signup-info span {
+    font-weight: 700;
+    font-style: normal;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.signup-info p {
+    font-size: 0.9875rem;
+    flex-basis: 500px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.signup-info a {
+    flex-basis: 100px;
+    border: 1px solid black;
+    border-radius: 3px;
+    align-self: baseline;
+    padding: 10px 0px 10px 15px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.signup-info a:hover {
+    background: black;
+    color: white;
+    transition: all 0.6s;
+}
+
+.subs-msg {
+    text-align: center;
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    margin: 10px;
+}
+
+.subs-msg:before,
+.subs-msg:after {
+    height: 1px;
+    background: #ccc;
+    width: 100px;
+    content: '';
+    display: block;
+    margin: 20px auto;
+}
+
+.subs-msg p {
+    margin: 0;
+    font-size: 0.978rem;
+    line-height: 1.35;
+}
+
+.subs-msg p:last-child {
+    color: rgb(50, 104, 145);
+    cursor: pointer;
+}
+
+.main-container .final-para {
+    color: #555;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.main-container .final-para a {
+    color: #555;
+}
+
+.main-container .section-end {
+    padding: 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-container .section-end .icn-btn ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.15rem;
+    padding: 20px 0 20px 0;
+}
+
+.main-container .section-end .icn-btn ul li {
+    height: 35px;
+    width: 35px;
+    margin: 0 10px 0 10px;
+    line-height: 1.9;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #eee;
+    border-radius: 50%;
+}
+
+.main-container .section-end .icn-btn ul li:hover {
+    border: 1px solid #ddd;
+    background: white;
+}
+
+
+/* Second section */
+
+.sec-container {
+    text-align: center;
+    font-size: 100%;
+    width: 600px;
+    border-top: 1px solid #333;
+    margin: 40px auto;
+}
+
+.sec-container p:nth-child(2),
+.sec-container p:nth-child(3) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 200;
+}
+
+.sec-container p:first-child {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    letter-spacing: -0.5px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin: 40px 0px 16px;
+}
+
+.sec-container p:last-child {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-top: 16px;
+    max-width: 100%;
+}
+
+.sec-container button {
+    margin: 23px auto 0px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    background: rgb(18, 18, 18);
+    border: none;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 3px;
+    height: 48px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+
+/* GRID */
+
+.grid-container {
+    width: 945px;
+    margin: 30px auto;
+    padding-bottom: 10px;
+}
+
+.grid-container h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.grid-container h3 {
+    padding: 10px 0px;
+    font-size: 17px;
+    color: #555;
+}
+
+.grid-container p {
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #333;
+}
+
+.sub-grid1 span,
+.sub-grid2 span {
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.main-grid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 576px;
+    background: url(https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.sub-grid1,
+.sub-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.sub-grid1 {
+    grid-row: 2;
+}
+
+.sub-grid2 {
+    grid-row: 4;
+}
+
+.grid-by {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.grid-by:before {
+    display: block;
+    content: '';
+    background: black;
+    width: 100px;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+
+/* Figures/Images/Videos */
+
+figcaption {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    margin-right: 7px;
+    color: #666;
+    vertical-align: baseline;
+    margin-bottom: 43px;
+}
+
+figcaption span {
+    color: #888;
+    font-size: 0.8125rem;
+    letter-spacing: 0.01em;
+    padding-left: 5px;
+}
+
+.main-container figure {
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.video {
+    width: 600px;
+}
+
+.second-img {
+    width: 720px;
+}
+
+
+/* Sidebar */
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    position: absolute;
+    right: 150px;
+}
+
+.side-bar-head p {
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+}
+
+.side-bar .sub-side img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 75px;
+    max-width: 75px;
+    cursor: pointer;
+}
+
+.sub-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 0%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.sub-side p {
+    font-size: 0.99rem;
+    line-height: 1.15;
+    padding: 2px 0 0 5px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+.sub-side p:hover {
+    text-decoration: underline;
+}
+
+
+/* Third-section */
+
+.tert-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tert-container .left {
+    float: left;
+    width: 70%;
+}
+
+.tert-container .right {
+    float: right;
+    width: 30%;
+}
+
+
+/* third-section-left-side */
+
+.tert-container .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.tert-container .left>h1 {
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+
+.tert-container .left>div {
+    padding: 10px 0 20px 0;
+}
+
+.tert-container .left h1 {
+    font-size: 18px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    /* padding-bottom: 0; */
+}
+
+.tert-container .left .left1 {
+    display: flex;
+}
+
+.tert-container .left .left1 div {
+    width: 260px;
+    height: 280px;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 12px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-align: left;
+    position: relative;
+}
+
+.tert-container .left .left1 div img {
+    width: 70px;
+    height: auto;
+}
+
+.tert-container .left .left1 div p {
+    text-transform: uppercase;
+    color: #555;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.tert-container .left .left1 div h2 {
+    font-size: 16px;
+    line-height: 1;
+    color: #666;
+    padding: 10px 0;
+}
+
+.tert-container .left .left1 div a {
+    font-size: 15px;
+    color: #326891;
+    /* text-decoration: none; */
+    position: absolute;
+    bottom: 10px;
+    font-weight: 700;
+}
+
+.tert-container .left .left1 div a:hover {
+    text-decoration: underline;
+}
+
+.tert-container .left .left1 div i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.59;
+}
+
+.tert-container .left .left1 div i:hover {
+    background: black;
+    color: white;
+}
+
+.tert-container .left .left1 div:hover {
+    box-shadow: rgb(196 196 196 / 50%) 0px 4px 6px;
+}
+
+.tert-container .left .left1 div:first-child {
+    margin-left: 0;
+}
+
+.tert-container .left .left1 div:last-child {
+    margin-right: 0;
+}
+
+.tert-container .left .left2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+}
+
+.tert-container .left .left2 div {
+    height: 280px;
+    width: 260px;
+    cursor: pointer;
+}
+
+.tert-container .left .left2 div:first-child {
+    margin-left: 0;
+}
+
+.tert-container .left .left2 div:last-child {
+    margin-right: 0;
+}
+
+.tert-container .left .left2 div:nth-child(odd) {
+    margin-left: 20px;
+}
+
+.tert-container .left .left2 div:first-child {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.tert-container .left .left3 {
+    display: flex;
+}
+
+.tert-container .left .left3 div {
+    width: 260px;
+    height: 280px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.tert-container .left .left3 div:first-child {
+    margin-left: 0;
+}
+
+.tert-container .left .left3 div:last-child {
+    margin-right: 0;
+}
+
+.tert-container .left .left2 div figure figcaption,
+.tert-container .left .left3 div figure figcaption {
+    font-size: 12.5px;
+    text-align: right;
+    margin-bottom: 3px;
+}
+
+.tert-container .left .left2 div h2,
+.tert-container .left .left3 div h2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.tert-container .left .left2 div p,
+.tert-container .left .left3 div p {
+    color: #888;
+    padding-top: 4px;
+}
+
+
+/* third-section-right-side */
+
+.tert-container .right ul li {
+    font-size: 1.2rem;
+    line-height: 1.4375rem;
+    border-top: 1px solid #999;
+    padding: 12px 0 12px 5px;
+    text-decoration: none;
+}
+
+.tert-container .right ul li:hover {
+    color: #888
+}
+
+.tert-container .right ul li:first-child {
+    border-top: 1px solid black;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.tert-container .right ul li:first-child:hover {
+    color: black;
+}
+
+
+/* FOOTER */
+
+.main-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-top: 4px double #999;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.nyt-logo img {
+    height: 27px;
+}
+
+.footer-top a {
+    font-size: 0.78rem;
+    text-decoration: none;
+    color: rgb(50, 104, 145);
+    padding-top: 7px;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-mid>* {
+    flex: 1;
+}
+
+.footer-mid ul li {
+    font-size: 13.5px;
+    font-weight: 500;
+    height: 28px;
+    line-height: 16px;
+}
+
+.footer-mid ul .heading {
+    text-transform: uppercase;
+    font-weight: 750;
+}
+
+.footer-mid ul .heading:hover {
+    text-decoration: none;
+    cursor: auto;
+}
+
+.footer-mid .additionals {
+    border-left: 1px solid rgb(226, 226, 226);
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.footer-mid .additionals ul:first-child li {
+    cursor: auto;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-mid .additionals>* {
+    padding-bottom: 10px;
+    font-size: 10px;
+}
+
+.footer-mid .additionals .links-1 li {
+    font-weight: 700;
+}
+
+.footer-mid .additionals .links-2 li,
+.footer-mid .additionals .links-3 li {
+    font-size: 11px;
+}
+
+.footer-mid .additionals .links-3 {
+    border-top: 1px solid rgb(226, 226, 226);
+    padding-top: 8px;
+}
+
+.footer-bottom {
+    margin-top: 5px;
+    border-top: 1px solid rgb(226, 226, 226);
+    padding-top: 9px;
+    padding-bottom: 20px;
+}
+
+.footer-bottom a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #666;
+    padding: 0 9px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+}
