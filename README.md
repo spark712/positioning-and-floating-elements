@@ -4,6 +4,7 @@
   as part of The Odin Project Curriculum.
   
   This project is build using different positioning and floating techniques.
+  
     1. FlexBox
     2. Grid
     3. Poistion properties
